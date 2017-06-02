@@ -1,0 +1,7 @@
+<% if @flower %>
+  <%= form_for @flower do |f|%>
+  <%= f.label "Name" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Go", class: 'btn btn-info' %>
+<% end %>
+<% end %>

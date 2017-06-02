@@ -1,0 +1,62 @@
+// Place all the styles related to the bukets controller here.
+// They will automatically be included in application.css.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body, html {
+  height: 100%;
+  padding:0px;
+  margin:0px;
+  background-color:#FFF;
+}
+
+* html #page {
+  height:100%;
+}
+
+#page {
+  width:800px;
+  margin:0 auto;
+  min-height:100%;
+}
+
+#header{
+  background-color:#FFDEAD;
+  height:100px;
+}
+
+#left{
+  width:150px;
+  background-color:#E6E6FA;
+  float:left;
+}
+
+#right{
+  width:150px;
+  background-color:#E6E6FA;
+  float:right;
+}
+
+#content {
+  margin-left: 152px;
+  margin-right: 152px;
+  background-image: url("http://oboihd-plus.ucoz.ru/_ph/27/603731393.jpg?1494278118");;
+
+  #footer {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    margin-top: -100px;
+    background-color: #FFEC8B;
+    clear: both;
+  }
+  body {
+
+  }
+
+
+}
+footer {
+
+  background-color: #ECC5BE;
+}
+

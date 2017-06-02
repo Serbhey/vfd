@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Основы блочной верстки (Div верстки)</title>
+  <link href="style_2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="page">
+
+  <div id="header">Шапка </div>
+
+  <div id="left">Левая колонка <br>Меню <br>Пункт 1 <br>Пункт 2 <br>Пункт 3 <br>Пункт 4</div>
+
+  <div id="right">Правая колонка <br>Новость 1<br>Новость 2 <br>Новость 3 <br>Новость 4</div>
+
+  <div id="content">
+
+<h1>Bukets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bukets.each do |buket| %>
+      <tr>
+        <td><%= buket.title %></td>
+        <td><%= buket.description %></td>
+        <td><%= buket.price %></td>
+        <td><%= link_to 'Show', buket %></td>
+        <td><%= link_to 'Edit', edit_buket_path(buket) %></td>
+        <td><%= link_to 'Destroy', buket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  </div>
+
+<br>
+
+<%= link_to 'New Buket', new_buket_path %>
+</body>
+
+<footer>
+  wgeggegrgwee
+  wgwegwegwegwegew
+  gewgweggwegwe
+
+</footer>
